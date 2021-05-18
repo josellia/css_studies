@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #30880d;
+}
+/* Criando pseudo elemento para o h1 possa não herdar nada do filter*/
+.container::before {
+  content: "";
+  background-image: url(./imgs/avocado.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Altera a cor */
+  filter: brightness(0.8) sepia(2) saturate(8) hue-rotate(30deg);
+  width: 400px;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  width: 400px;
+  height: 300px;
+  margin: 100px auto;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
