@@ -23,6 +23,7 @@ body {
   top: 0px;
   left: 0px;
   position: absolute;
+  /* Traz o texto para a frente da imagem */
   z-index: -1;
 }
 
