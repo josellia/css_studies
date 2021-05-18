@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+a::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../imgs/right-arrow.svg);
+  background-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+a,
+a:visited {
+  background-color: #4b3621;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #964b00;
+}
+
+a:active {
+  background-color: #392620;
+}
